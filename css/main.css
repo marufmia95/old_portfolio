@@ -451,16 +451,29 @@
   margin-bottom: 20px;
   border-radius: 10px;
 }
-#bottom .contact .item .item2 p {
-  color: #a09d9d;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Times New Roman", Times, serif;
-  line-height: 30px;
-  margin: 10px 10px;
+#bottom .contact .item input {
+  color: black;
+  padding: 10px;
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  border-radius: 10px;
+width: 100%;
 }
 #bottom .contact .item .item2 p i {
   margin-right: 20px;
+
+}
+.item_2{
+  border: 1px solid #828282;
+  height: 70%;
+  border-radius: 10px;
+}
+.item_2 p{
+list-style: none;
+padding: 10px;
+font-size: 18px;
+text-align: center;
+color: #fff;
 }
 #bottom .acount {
   text-align: center;
