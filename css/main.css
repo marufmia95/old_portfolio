@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+#main_manu {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  background-color: #1D1A29;
+}
+#main_manu .main {
+  display: flex;
+}
+#main_manu .main .logo {
+  width: 20%;
+  align-items: center;
+}
+#main_manu .main .logo img {
+  width: 50%;
+  line-height: 100px;
+}
+#main_manu .main .manu {
+  width: 60%;
+}
+#main_manu .main .manu ul {
+  display: flex;
+}
+#main_manu .main .manu ul li {
+  margin: 20px;
+  list-style: none;
+  margin-top: 40px;
+}
+#main_manu .main .manu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  transition: 0.4s;
+}
+#main_manu .main .manu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #7963E0;
+  transition: 1s;
+  transform: scale(0);
+}
+#main_manu .main .manu ul li a:hover::after {
+  transform: scale(1);
+  bottom: -20px;
+  color: #7963E0;
+}
+#main_manu .main .battun {
+  width: 20%;
+  margin-top: 40px;
+}
+#main_manu .main .battun a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  margin-left: 95px;
+  background-color: #7963E0;
+  color: white;
+  transition: 0.4s;
+}
+#main_manu .main .battun a:hover {
+  background-color: #4d36b5;
+  color: #161321;
+}
+
+#hero {
+  background-color: #161321;
+  width: 100%;
+}
+#hero .banner {
+  display: flex;
+}
+#hero .banner img {
+  padding-top: 100px;
+}
+#hero .banner .item {
+  margin-top: 200px;
+  width: 50%;
+}
+#hero .banner .item h5 {
+  color: #7963E0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+#hero .banner .item h1 {
+  color: white;
+  font-size: 35px;
+  margin: 25px 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+#hero .banner .item h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0;
+  font-family: "Courier New", Courier, monospace;
+}
+#hero .banner .item p {
+  color: #a09d9d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+#hero .banner .item a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background-color: #7963E0;
+  color: white;
+  transition: 0.4s;
+}
+#hero .banner .item a:hover {
+  background-color: #4d36b5;
+  color: #161321;
+}
+#hero .banner .item1 {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#service {
+  padding: 100px;
+  background: url(../image/Untitled\ design.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+#service::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.828);
+  z-index: -1;
+}
+#service h5 {
+  color: #7963E0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+#service .item {
+  display: flex;
+}
+#service .item .item1 {
+  border-right: 1px solid #534f4f;
+  margin: 20px;
+}
+#service .item .item1 img {
+  margin: 15px;
+}
+#service .item .item1 h3 {
+  color: #7963E0;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 300px;
+}
+#service .item .item1 h2 {
+  color: white;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+#service .item .item1 p {
+  color: #a09d9d;
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+}
+
+#inspiration {
+  background-color: #161321;
+}
+#inspiration .ma {
+  display: flex;
+}
+#inspiration .ma .item {
+  width: 50%;
+}
+#inspiration .ma .item img {
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#inspiration .ma .item1 {
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 60px;
+}
+#inspiration .ma .item1 h5 {
+  color: #7963E0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+#inspiration .ma .item1 h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0;
+}
+#inspiration .ma .item1 p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #a09d9d;
+  line-height: 30px;
+}
+
+#qualificattion {
+  width: 100%;
+  background-color: #161321;
+}
+#qualificattion h4 {
+  color: #7963E0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+#qualificattion h1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 50px;
+}
+#qualificattion .education {
+  display: flex;
+}
+#qualificattion .education .item {
+  width: 49%;
+  margin-bottom: 100px;
+  margin-right: 10px;
+}
+#qualificattion .education .item h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+#qualificattion .education .item .item2 {
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#qualificattion .education .item .item2 h5 {
+  color: #7963E0;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  margin: 10px 10px;
+}
+#qualificattion .education .item .item2 h3 {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+#qualificattion .education .item .item2 p {
+  color: #a09d9d;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  margin: 10px 10px;
+}
+#qualificattion .education .item1 {
+  width: 49%;
+  margin-left: 10px;
+}
+#qualificattion .education .item1 h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+#qualificattion .education .item1 .item2 {
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#qualificattion .education .item1 .item2 h5 {
+  color: #7963E0;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  margin: 10px 10px;
+}
+#qualificattion .education .item1 .item2 h3 {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+#qualificattion .education .item1 .item2 p {
+  color: #a09d9d;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  margin: 10px 10px;
+}
+
+#portfolio {
+  background-color: #161321;
+}
+#portfolio .container {
+  width: 1170px;
+}
+#portfolio .container h5 {
+  color: #7963E0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+#portfolio .container h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+#portfolio .container .manu {
+  margin-left: 230px;
+}
+#portfolio .container .manu ul {
+  list-style: none;
+  display: flex;
+}
+#portfolio .container .manu ul li {
+  margin: 30px;
+}
+#portfolio .container .manu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  width: 400;
+  position: relative;
+  transition: 0.4s;
+}
+#portfolio .container .manu ul li a:hover {
+  color: #7963E0;
+  letter-spacing: 0.3px;
+}
+#portfolio .container .manu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 20px;
+  height: 2px;
+  width: 100%;
+  background-color: #4d36b5;
+  transform: scaleX(0);
+  transition: 1s;
+}
+#portfolio .container .manu ul li a:hover::after {
+  transform: scale(1);
+}
+#portfolio .container .item {
+  display: flex;
+  margin-top: 50px;
+}
+#portfolio .container .item .item1 {
+  width: 370px;
+  margin-left: -5px;
+  margin: 20px;
+  margin-bottom: 100px;
+  position: relative;
+}
+#portfolio .container .item .item1 img {
+  border-radius: 20px;
+}
+#portfolio .container .item .item1 h2 {
+  position: absolute;
+  color: #fff;
+  background-color: rgba(22, 19, 33, 0.596);
+  padding: 15px 50px;
+  border-radius: 15px;
+  margin-left: 90px;
+  margin-top: 330px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#portfolio .container .item .item1:hover h2 {
+  z-index: 1;
+}
+
+#bottom {
+  background-color: #1D1A29;
+}
+#bottom .contact {
+  display: flex;
+}
+#bottom .contact .item {
+  width: 50%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin: 50px;
+}
+#bottom .contact .item h1 {
+  color: white;
+}
+#bottom .contact .item .item2 {
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#bottom .contact .item .item2 p {
+  color: #a09d9d;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  margin: 10px 10px;
+}
+#bottom .contact .item .item2 p i {
+  margin-right: 20px;
+}
+#bottom .acount {
+  text-align: center;
+  padding-bottom: 70px;
+}
+#bottom .acount a {
+  margin: 30px;
+}
+#bottom .acount a i {
+  font-size: 30px;
+  color: #0866FF;
+}/*# sourceMappingURL=main.css.map */

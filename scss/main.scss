@@ -1,0 +1,546 @@
+$primary-color: #1D1A29;
+$secndery-color: #161321;
+$tred-color: #7963E0;
+$four-color: #a09d9d;
+$five-color: #ffff;
+$six-color: #4d36b5;
+$siven-color: rgba(22, 19, 33, 0.7);
+
+// **********color section end********
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+// *********common css end***********
+
+#main_manu{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    background-color: $primary-color;
+   .main{
+    display: flex;
+
+    .logo{
+        width: 20%;
+        align-items: center;
+    img{
+        width: 50%;
+        line-height: 100px;
+    }
+    }
+    .manu{
+        width: 60%;
+        ul{
+            display: flex;
+            // align-items: center;
+
+            li{
+                margin: 20px;
+                list-style: none;
+                margin-top: 40px;
+
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $five-color;
+                    position: relative;
+                    transition: .4s;
+
+                    
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 20px;
+                        bottom: 0px;
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        background-color: $tred-color;
+                        transition: 1s;
+                        transform: scale(0);
+                        
+                    }
+                    &:hover::after{
+                        transform: scale(1);
+                        bottom: -20px;
+                        color: $tred-color;
+                    }
+                }
+                
+            }
+
+        }
+    }
+    .battun{
+        width: 20%;
+        margin-top: 40px;
+
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 30px;
+            margin-left: 95px;
+            background-color: $tred-color;
+            color: $five-color;
+            transition: .4s;
+
+            &:hover{
+                background-color: $six-color;
+                color: $secndery-color;
+            }
+           }
+    }
+   }
+
+}
+// *****************navber end****************
+// *********hero section start************
+#hero{
+    background-color: $secndery-color;
+    width: 100%;
+
+    .banner{
+        display: flex;
+
+
+        img{
+            padding-top: 100px;
+        }
+        .item{
+            margin-top: 200px;
+            width: 50%;
+            h5{
+                color: $tred-color;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h1{
+                color: $five-color;
+                font-size: 35px;
+                margin: 25px 0;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+
+            }
+            h4{
+                color: $five-color;
+                font-size: 20px;
+                font-weight: 500;
+                margin: 15px 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+                color: $four-color;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 40px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+           a{
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 30px;
+            background-color: $tred-color;
+            color: $five-color;
+            transition: .4s;
+
+            &:hover{
+                background-color: $six-color;
+                color: $secndery-color;
+            }
+           }
+        }
+        .item1{
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+    }
+}
+// *********hero section end  ************
+// ***********service section start*********
+#service{
+    padding: 100px;
+    background: url(../image/Untitled\ design.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.828);
+        z-index: -1;
+    }
+
+
+    h5{
+        color: $tred-color;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+   .item{
+    display: flex;
+    .item1{
+        border-right: 1px solid #534f4f;
+        margin: 20px;
+        
+        img{
+            margin: 15px;
+        }
+        h3{
+            color: $tred-color;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-left: 300px;
+        }
+        h2{
+            color: $five-color;
+            margin-left: 15px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $four-color;
+            margin-left: 15px;
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 15px;
+        }
+    }
+   }
+}
+// ***********service section end  *********
+// ***********ABOUT US start  start*********
+#inspiration{
+    background-color: $secndery-color;
+
+    .ma{
+        display: flex;
+        .item{
+            width: 50%;
+            img{
+                border-radius: 20px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        }
+        .item1{
+            width: 50%;
+            margin-top: 200px;
+            margin-left: 60px;
+
+            h5{
+                color: $tred-color;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h1{
+                font-size: 35px;
+                font-weight: bold;
+                color: $five-color;
+                margin: 20px 0;
+            }
+            
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                font-family: sans-serif;
+                color: $four-color;
+                line-height: 30px;
+            }
+        }
+    }
+}
+// ***********ABOUT US start  end  *********
+// **************QUALIFICATION SRATR**************
+#qualificattion{
+    width: 100%;
+    background-color: $secndery-color;
+
+    h4{
+        color: $tred-color;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        color: $five-color;
+        font-size: 40px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 50px;
+    }
+    .education{
+        display: flex;
+
+        .item{
+            width: 49%;
+            margin-bottom: 100px;
+            margin-right: 10px;
+            h1{
+                color: $five-color;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-bottom: 0;
+            }
+
+            .item2{
+                border: 1px solid #828282;
+               margin-bottom: 20px;
+               border-radius: 10px;
+
+                h5{
+                    color: $tred-color;
+                    font-size: 20px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 700;
+                    margin: 10px 10px;
+                }
+                h3{
+                    font-size: 25px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: $five-color;
+                }
+                p{
+                    color: $four-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: 'Times New Roman', Times, serif;
+                    line-height: 30px;
+                    margin: 10px 10px;
+                }
+            }
+        }
+
+
+
+         .item1{
+            width: 49%;
+            margin-left: 10px;
+            h1{
+                color: $five-color;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-bottom: 0;
+            }
+
+            .item2{
+                border: 1px solid #828282;
+               margin-bottom: 20px;
+               border-radius: 10px;
+
+                h5{
+                    color: $tred-color;
+                    font-size: 20px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 700;
+                    margin: 10px 10px;
+                }
+                h3{
+                    font-size: 25px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: $five-color;
+                }
+                p{
+                    color: $four-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: 'Times New Roman', Times, serif;
+                    line-height: 30px;
+                    margin: 10px 10px;
+                }
+            }
+        }
+    }
+}
+// **************QUALIFICATION END****************
+// ************PORTFOLIO section end  *********
+#portfolio{
+    background-color: $secndery-color;
+    .container{
+        width: 1170px;
+    
+    h5{
+        color: $tred-color;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+        color: $five-color;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 20px 0;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .manu{
+        margin-left: 230px;
+        ul{
+            list-style: none;
+            display: flex;
+
+            li{
+                margin: 30px;
+                a{
+                    text-decoration: none;
+                    color: $five-color;
+                    font-size: 20px;
+                    width: 400;
+                    position: relative;
+                    transition: .4s;
+
+                    &:hover{
+                        color: $tred-color;
+                        letter-spacing: .3px;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0%;
+                        top: 20px;
+                        height: 2px;
+                        width: 100%;
+                        background-color: $six-color;
+                        transform: scaleX(0);
+                        transition: 1s;
+                    }
+                    &:hover::after{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        
+    }
+    .item{
+        display: flex;
+        margin-top: 50px;
+    .item1{
+        width: 370px;
+        margin-left: -5px;
+        margin: 20px;
+        margin-bottom: 100px;
+        position: relative;
+        img{
+            border-radius: 20px;
+
+            
+        }
+        h2{
+            position: absolute;
+            color: #fff;
+            background-color: rgba(22, 19, 33, 0.596);
+            padding: 15px 50px;
+            border-radius: 15px;
+            margin-left: 90px;
+            margin-top: 330px;
+            z-index: -1;
+            transition: .4s;
+
+        }
+        &:hover h2{
+            z-index: 1;
+        }
+    }
+    }
+}
+}
+// ************PORTFOLIO section start*********
+// ************bottom section start**************
+#bottom{
+    background-color: $primary-color;
+
+    .contact{
+        display: flex;
+        .item{
+            width: 50%;
+            padding-top: 100px;
+            padding-bottom: 30px;
+            margin: 50px;
+            h1{
+                color: $five-color;
+            }
+    
+            .item2{
+                
+                border: 1px solid #828282;
+               margin-bottom: 20px;
+               border-radius: 10px;
+        
+                
+                
+                p{
+                    color: $four-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: 'Times New Roman', Times, serif;
+                    line-height: 30px;
+                    margin: 10px 10px;
+
+                    i{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .acount{
+        text-align: center;
+        padding-bottom: 70px;
+        
+        
+        a{
+            margin: 30px;
+            
+
+            i{
+                font-size: 30px;
+                color: #0866FF;
+            }
+        }
+    }
+
+    
+}
+
+// ************bottom section end  **************
